@@ -2,8 +2,8 @@ package e
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/steven1213/go-douyin/constant"
 	"net/http"
-	"steven.com/go-douyin/constant"
 )
 
 type WrapperHandler func(c *gin.Context) (interface{}, error)

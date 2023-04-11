@@ -2,12 +2,12 @@ package common
 
 import (
 	"fmt"
+	"github.com/steven1213/go-douyin/router"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"log"
 	"os"
-	"steven.com/go-douyin/router"
 	"time"
 )
 
