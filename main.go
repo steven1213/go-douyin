@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"steven.com/go-douyin/common"
+	"github.com/steven1213/go-douyin/common"
 )
 
 func main() {

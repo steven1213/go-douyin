@@ -2,8 +2,8 @@ package utils
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/steven1213/go-douyin/constant"
 	"net/http"
-	"steven.com/go-douyin/constant"
 )
 
 func Resp(context *gin.Context, httpStatus int, code int, msg string, data interface{}) {
