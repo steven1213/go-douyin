@@ -68,8 +68,10 @@ func NewConfig() *Config {
 	return &Config{}
 }
 
+var ConfigFile string
+
 func (config *Config) ReadConfig() *Config {
-	file, err := os.ReadFile("config/config.local.yaml")
+	file, err := os.ReadFile(ConfigFile)
 	if err != nil {
 		log.Fatalln("Read config file error: ", err)
 		return nil

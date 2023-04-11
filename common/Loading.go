@@ -42,7 +42,8 @@ type RDBManager struct {
 func InitDb(dbConfig *DbConfig) {
 	//启用打印日志
 	newLogger := logger.New(
-		log.New(os.Stdout, "\r\n", log.LstdFlags), // io writer
+		// io writer
+		log.New(os.Stdout, "\r\n", log.LstdFlags),
 		logger.Config{
 			SlowThreshold: time.Second, // 慢 SQL 阈值
 			LogLevel:      logger.Info, // Log level: Silent、Error、Warn、Info
