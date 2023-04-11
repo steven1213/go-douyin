@@ -7,5 +7,7 @@ func InitRouter(model string) *gin.Engine {
 	if model == "debug" {
 		r.Use(gin.Logger())
 	}
+
+	r.StaticFile("/favicon.ico", "./resources/favicon.ico")
 	return r
 }
